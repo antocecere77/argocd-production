@@ -9,14 +9,14 @@ spec:
   project: production
   source:
     path: helm
-    repoURL: https://github.com/vfarcic/devops-toolkit.git
+    repoURL: https://github.com/antocecere77/devops-toolkit.git
     targetRevision: HEAD
     helm:
       values: |
         image:
-          tag: latest
+          tag: 2.9.17
         ingress:
-          host: devopstoolkitseries.com
+          host: devops-toolkit.192.168.59.121.nip.io
       version: v3
   destination:
     namespace: production
